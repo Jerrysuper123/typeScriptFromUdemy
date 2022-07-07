@@ -1,0 +1,23 @@
+{
+  "name": "typescriptfromudemy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "no-typescript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jerrysuper123/typeScriptFromUdemy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jerrysuper123/typeScriptFromUdemy/issues"
+  },
+  "homepage": "https://github.com/Jerrysuper123/typeScriptFromUdemy#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
