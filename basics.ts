@@ -111,8 +111,8 @@ function merge<T>(array: T[], value: T) {
 
 let demoArray = [1, 2, 3];
 const updatedArray = merge(demoArray, 0);
-const stringArray = merge(["a", "b"], "c");
-//below is unable to catch error because you cannot split numbers
-updatedArray[0].split("");
+const stringArray = merge<string>(["a", "b"], "c");
+//below is able to catch error because you cannot split number type
+// updatedArray[0].split("");
 stringArray[0].split("");
 
