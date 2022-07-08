@@ -78,3 +78,41 @@ fruits.push({
     cost: 23
 })
 
+//function para types and return type
+//the return type is :number, but we do not need to type it out
+function add(a: number, b: number): number {
+    return a + b;
+}
+
+//return type is void, just like Java
+//but we do not need to type out :void, because TS inference
+function printOut(value: any): void {
+    console.log(value)
+}
+
+//generics - function return type is generic - where it infers from the parameter making utility function more flexible
+
+//normal f with any variable, 
+// function merge(array: any[], value: any) {
+//     const newArray = [value, ...array];
+//     return newArray;
+// }
+
+// let demoArray = [1, 2, 3];
+// const updatedArray = merge(demoArray, 0);
+// //below is unable to catch error because you cannot split numbers
+// updatedArray[0].split("");
+
+//use generics to extend the flexibility of the function
+function merge<T>(array: T[], value: T) {
+    const newArray = [value, ...array];
+    return newArray;
+}
+
+let demoArray = [1, 2, 3];
+const updatedArray = merge(demoArray, 0);
+const stringArray = merge(["a", "b"], "c");
+//below is unable to catch error because you cannot split numbers
+updatedArray[0].split("");
+stringArray[0].split("");
+
