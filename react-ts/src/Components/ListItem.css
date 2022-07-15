@@ -1,0 +1,8 @@
+.list {
+    border: 1px solid black;
+    background-color: bisque;
+    list-style: none;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+}
